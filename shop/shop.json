@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Damla Çikolatalı",
+    "price": 15,
+    "image": "images/i1.jpg",
+    "ingredients": "Un, tereyağı, toz şeker, kahverengi şeker, yumurta, vanilya, kabartma tozu, damla çikolata"
+  },
+  {
+    "id": 2,
+    "name": "Yulaflı Üzümlü",
+    "price": 12,
+    "image": "images/i2.jpg",
+    "ingredients": "Yulaf ezmesi, un, tereyağı, esmer şeker, bal, yumurta, tarçın, kuru üzüm"
+  },
+  {
+    "id": 3,
+    "name": "Fıstık Ezmeli",
+    "price": 18,
+    "image": "images/i3.jpg",
+    "ingredients": "Un, fıstık ezmesi, tereyağı, toz şeker, yumurta, vanilya, tuz, kabartma tozu"
+  },
+  {
+    "id": 4,
+    "name": "Tarçınlı Cevizli",
+    "price": 14,
+    "image": "images/i4.jpg",
+    "ingredients": "Un, tereyağı, toz şeker, yumurta, tarçın, ceviz içi, kabartma tozu, vanilya"
+  },
+  {
+    "id": 5,
+    "name": "Limonlu Haşhaşlı",
+    "price": 16,
+    "image": "images/i5.jpg",
+    "ingredients": "Un, tereyağı, pudra şekeri, yumurta, limon kabuğu rendesi, limon suyu, haşhaş tohumu, kabartma tozu"
+  },
+  {
+    "id": 6,
+    "name": "Kakaolu Islak",
+    "price": 17,
+    "image": "images/i6.jpg",
+    "ingredients": "Un, kakao, toz şeker, sıvı yağ, yoğurt, yumurta, kabartma tozu, çikolata sosu"
+  }
+]
