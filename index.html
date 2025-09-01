@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurabiş | El Yapımı Taze Kurabiyeler</title>
+    <meta
+      name="description"
+      content="Sevgiyle hazırlanan, taze malzemelerle yapılan el yapımı gurme kurabiyeler."
+    />
+    <meta
+      name="keywords"
+      content="kurabiye, el yapımı kurabiye, taze kurabiye, kurabiye siparişi, çikolatalı kurabiye, gurme kurabiye, tatlı, atıştırmalık"
+    />
+    <link rel="canonical" href="https://kurabis.com/" />
+    <meta property="og:title" content="El Yapımı Taze Kurabiyeler | Kurabiş" />
+    <meta
+      property="og:description"
+      content="Sevgiyle hazırlanan, taze malzemelerle yapılan el yapımı gurme kurabiyeler."
+    />
+    <meta
+      property="og:image"
+      content="https://kurabis.com/assets/kurabis-logo.png"
+    />
+    <meta property="og:url" content="https://kurabis.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="El Yapımı Taze Kurabiyeler | Kurabiş" />
+    <meta
+      name="twitter:description"
+      content="Sevgiyle hazırlanan, taze malzemelerle yapılan el yapımı gurme kurabiyeler."
+    />
+    <meta
+      name="twitter:image"
+      content="https://kurabis.com/assets/kurabis-logo.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FoodEstablishment",
+        "name": "Kurabiş",
+        "description": "El yapımı, taze ve lezzetli gurme kurabiyeler.",
+        "url": "https://kurabis.com/",
+        "logo": "https://kurabis.com/assets/kurabis-logo.png",
+        "telephone": "+905011597423",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ümraniye",
+          "addressRegion": "İstanbul",
+          "postalCode": "34776",
+          "addressCountry": "TR"
+        },
+        "servesCuisine": "Tatlı, Kurabiye, Atıştırmalık",
+        "priceRange": "₺₺",
+        "sameAs": ["https://www.instagram.com/kurabisoriginal"],
+        "potentialAction": {
+          "@type": "OrderAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://kurabis.com/#product-list",
+            "inLanguage": "tr",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/IOSPlatform",
+              "http://schema.org/AndroidPlatform"
+            ]
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="loader">
+      <div class="cookie-loader">🍪</div>
+    </div>
+
+    <div class="floating-cookies" aria-hidden="true">
+      <span>🍪</span><span>🍪</span><span>🍪</span><span>🍪</span
+      ><span>🍪</span>
+    </div>
+
+    <header class="navbar">
+      <div class="container">
+        <img
+          src="assets/kurabis-logo.png"
+          alt="Kurabiş Logo"
+          class="logo"
+        /><span class="logo-text">Kurabiş</span>
+        <div class="cart-button" id="open-cart-btn">
+          <span>Sepetim</span>
+          <span class="cart-count" id="cart-count">0</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <p>Gerçek Lezzetler.</p>
+        <a href="#product-list" class="hero-btn">Keşfet</a>
+      </div>
+    </section>
+
+    <article class="featured-product-container">
+      <div class="container featured-product">
+        <div class="featured-image">
+          <img
+            src="assets/featured.jpg"
+            alt="Ayın Lezzeti | Damla Çikolatalı Aşk"
+          />
+        </div>
+        <div class="featured-content">
+          <h3 class="section-title">Ayın Lezzeti</h3>
+          <h4>Damla Çikolatalı Aşk</h4>
+          <p>
+            Klasik lezzetten vazgeçemeyenler için, bitterin en saf haliyle
+            buluştuğu, dışı kıtır içi yumuşacık efsanevi kurabiyemiz.
+          </p>
+          <a href="#product-list" class="hero-btn">Tüm Lezzetleri Gör</a>
+        </div>
+      </div>
+    </article>
+
+    <main class="container">
+      <h2 class="section-title-kurabis">Tüm Kurabişlerimiz</h2>
+      <section id="product-list" class="product-grid"></section>
+    </main>
+
+    <aside id="cart-sidebar" class="cart-sidebar" aria-label="Alışveriş Sepeti">
+      <div class="cart-header">
+        <h2>Sepetiniz</h2>
+        <button id="close-cart-btn" class="close-btn" aria-label="Sepeti Kapat">
+          &times;
+        </button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="total-price">
+          <span>Toplam</span>
+          <span id="total-price">0 TL</span>
+        </div>
+        <button id="whatsapp-order-btn" class="order-btn">
+          Siparişi Tamamla
+        </button>
+      </div>
+    </aside>
+    <div id="cart-overlay" class="popup-overlay"></div>
+
+    <div id="product-popup-overlay" class="popup-overlay"></div>
+    <div id="product-popup" class="product-popup">
+      <button id="close-popup-btn" class="close-btn">&times;</button>
+      <div id="popup-content" class="popup-content">
+        <img src="" alt="" class="popup-image" />
+        <h3 class="popup-name"></h3>
+        <p class="popup-price"></p>
+        <div class="popup-ingredients">
+          <h4>İçindekiler</h4>
+          <ul id="ingredients-list"></ul>
+        </div>
+        <button id="popup-add-to-cart-btn" class="add-to-cart-popup-btn">
+          Sepete Ekle
+        </button>
+      </div>
+    </div>
+
+    <a
+      href="https://wa.me/905011597423?text=Merhaba,%20kurabiyeleriniz%20hakkında%20bilgi%20almak%20istiyorum."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="whatsapp-float"
+      aria-label="WhatsApp Destek"
+    >
+      <img src="assets/whatsapp-logo.svg" alt="WhatsApp" />
+    </a>
+
+    <footer class="footer">
+      <div class="container">
+        <address>
+          kurabis.com<br />
+          Telefon <a href="tel:+905011597423">0501 159 74 23</a><br />
+          Email <a href="mailto:info@kurabis.com">info@kurabis.com</a>
+        </address>
+        <p>&copy; 2025 Kurabiş, Tüm hakları saklıdır.</p>
+        <p>
+          Resmi
+          <a
+            href="https://instagram.com/kurabisoriginal"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+          Hesabımız
+        </p>
+        <p>❤️ ile Hazırlandı.</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
